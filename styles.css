@@ -1,0 +1,12 @@
+.pulpit-url-input {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.pulpit-button-row button {
+  padding: 6px 14px;
+}

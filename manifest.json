@@ -1,0 +1,11 @@
+{
+  "id": "pulpit",
+  "name": "Pulpit",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Save articles from any URL as clean Markdown notes in your vault. Local-first, no accounts.",
+  "author": "Arlington Castille",
+  "authorUrl": "https://github.com/ArlingtonCastille",
+  "fundingUrl": "https://buymeacoffee.com/arlingtoncastille",
+  "isDesktopOnly": false
+}

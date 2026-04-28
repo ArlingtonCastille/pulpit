@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+data.json
+
+# Build output (generated, but optionally committed for releases)
+# main.js
