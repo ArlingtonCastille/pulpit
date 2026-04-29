@@ -1,21 +1,49 @@
 # Pulpit
 
-Save articles from any URL as clean Markdown notes in your Obsidian vault.
+**Your read-later, in your vault.**
 
-Pulpit takes a web page, strips out the ads, sidebars, and navigation, and writes the article body to your vault as a properly formatted Markdown note with frontmatter. Local-first, no accounts, no servers, no API keys.
+Send any article straight into your Obsidian vault, formatted and ready to read.
+
+Pulpit fetches a URL, strips the ads and sidebars, and writes the article body to your vault as a properly formatted Markdown note with useful frontmatter. Local-first. No accounts, no servers, no API keys, no telemetry.
+
+## What a saved note looks like
+
+```
+
+\---
+title: How to write better
+source: https://example.com/article
+author: Jane Doe
+date_saved: 2026-04-29
+tags: [reading]
+\---
+
+# How to write better
+
+*By Jane Doe*
+
+Source: <https://example.com/article>
+
+---
+
+The article body in clean Markdown...
+
+```
+
+That's the actual file Pulpit drops into your vault. Frontmatter ready for Dataview queries, body ready for highlighting and linking.
 
 ## Features
 
-- Save the URL on your clipboard with one command
-- Or paste a URL into a dialog and save
-- Configurable save folder
-- Default tags applied to every clipping (optional)
-- Frontmatter with title, source URL, author, and date saved
-- Article body cleaned and converted to Markdown
+- **One command, one note** — Ctrl/Cmd+P, paste a URL, get a Markdown file
+- **Clean extraction** — ads, sidebars, and comment sections stripped, just the article
+- **Useful frontmatter** — title, source URL, author, and date saved, ready for Dataview
+- **Default tags** — comma-separated tags applied to every clipping (optional)
+- **Configurable save folder** — drop notes anywhere in your vault
+- **Local-first** — no accounts, no servers, no API keys, no telemetry
 
 ## Install
 
-### Via BRAT (recommended for now)
+### Via BRAT (until Pulpit is in the community directory)
 
 1. Install the BRAT plugin from Obsidian's Community Plugins.
 2. In BRAT settings, click "Add Beta Plugin."
@@ -40,6 +68,8 @@ The saved note opens automatically in a new tab.
 
 ## Settings
 
+Pulpit ships with sensible defaults. These are for fine-tuning:
+
 - **Save folder** — where saved articles are written. Defaults to `Pulpit/`. The folder is created automatically.
 - **Default tags** — comma-separated tags added to every saved article. Leave blank for none.
 
@@ -58,9 +88,10 @@ Pulpit runs entirely on your machine. The plugin fetches the URL you give it dir
 ## Roadmap
 
 - Local image downloading and embedding
-- Custom filename templates
-- Bulk URL import from a list
-- Highlight syncing
+- Custom filename templates (date prefixes, slug formats, etc.)
+- Bulk URL import from a list of links in a note
+- Highlight extraction from saved articles
+- Reader mode preview before saving
 
 ## License
 
@@ -68,7 +99,7 @@ MIT. See [LICENSE](LICENSE).
 
 ## Support
 
-Pulpit is free and donationware. If it earns its keep:
+If Pulpit earns its keep, here's how to keep it going:
 
 - [Buy Me a Coffee](https://buymeacoffee.com/arlingtoncastille)
 - [Patreon](https://patreon.com/arlingtoncastille)
