@@ -8,15 +8,14 @@ Pulpit fetches a URL, strips the ads and sidebars, and writes the article body t
 
 ## What a saved note looks like
 
-```
-
-\---
+~~~markdown
+---
 title: How to write better
 source: https://example.com/article
 author: Jane Doe
 date_saved: 2026-04-29
 tags: [reading]
-\---
+---
 
 # How to write better
 
@@ -27,8 +26,7 @@ Source: <https://example.com/article>
 ---
 
 The article body in clean Markdown...
-
-```
+~~~
 
 That's the actual file Pulpit drops into your vault. Frontmatter ready for Dataview queries, body ready for highlighting and linking.
 
